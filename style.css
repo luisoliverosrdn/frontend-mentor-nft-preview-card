@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+ 
+  html, body {
+    height: 100%;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  img{
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+ 
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+   font-weight: 300;
+}
+
+p{
+  color: hsl(215, 51%, 70%); 
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    max-width: 21.44rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.card-img{
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img img{
+  width: 100%;
+}
+
+.img-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: 0;
+}
+
+.card-img:hover .img-overlay{
+  opacity: 1;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.img-overlay img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.card-title{
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  padding: 1.5rem 0 1rem;
+  font-weight: 600;
+}
+
+.card-subgroup{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.card-price{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-price h2{
+  color: hsl(178, 100%, 50%);
+  font-size: 1rem;
+}
+
+.card-time{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon{
+  display: block;
+  padding-right: 0.5rem;
+  align-items: center;
+}
+
+.card-credit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding: 1rem 0 0 0;
+}
+
+.card-credit img{
+  display: block;
+  max-width: 30px;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 0;
+}
+
+.card-credit p{
+  padding-left: 1rem;
+}
+
+span{
+  color: white;
+}
+
+.hover:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  color: hsl(215, 51%, 70%);
+  text-align: center;
+}
+
+footer a{
+  color: white;
+}
